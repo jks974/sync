@@ -10,6 +10,7 @@ RUN useradd --system --uid 1000 -M --shell /usr/sbin/nologin sync_user
 RUN curl -o /usr/bin/btsync.tar.gz https://download-cdn.getsync.com/stable/linux-x64/BitTorrent-Sync_x64.tar.gz
 RUN cd /usr/bin && tar -xzvf btsync.tar.gz && rm btsync.tar.gz
 
+#sync_user
 USER sync_user
 
 VOLUME ["/data"]
