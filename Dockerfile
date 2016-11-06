@@ -22,4 +22,4 @@ EXPOSE 8888
 
 #ENTRYPOINT ["btsync"]
 ENTRYPOINT ["/usr/bin/rslsync"]
-CMD ["--config", "/config/sync.config", "--nodaemon $*"]
+CMD ["--config", "/config/sync.config", "--nodaemon"]
